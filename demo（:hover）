@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>字体</title>
+	<title>父代hover效果</title>
 	<style>
 			.box1{
 			width: 200px;
@@ -29,5 +29,76 @@
 		<div id="box2"></div>
 	</div>
 	
+</body>
+</html>
+
+
+
+<!--通过这种方法可以延伸-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无序列表下拉框</title>
+	<style>
+		body{
+			position: relative;
+		}
+		.father>li{
+			width:170px;
+			height:28px;
+			margin-right:10px;
+			background:#ccc;
+			float:left;
+			list-style:none;
+		}
+		.father>li ul{
+			width:auto;
+			height:28px;
+			position:absolute;
+			display:none;
+			top:28px;
+			background:#fff;
+		}
+		.father>li ul li{
+			width:100px;
+			height:28px;
+			margin-right:10px;
+			float:left;
+			list-style:none;
+		}
+		.father>li:hover ul{
+			display:block;
+		}
+			
+	</style>
+</head>
+<body>
+	<ul class="father">
+		<li>AAA
+			<ul>
+				<li>a</li>
+				<li>a</li>
+				<li>a</li>
+				<li>a</li>
+			</ul>
+		</li>
+		<li>BBB
+			<ul>
+				<li>b</li>
+				<li>b</li>
+				<li>b</li>
+				<li>b</li>
+			</ul>
+		</li>
+		<li>CCC
+			<ul>
+				<li>c</li>
+				<li>c</li>
+				<li>c</li>
+				<li>c</li>
+			</ul>
+		</li>
+	</ul>
 </body>
 </html>
